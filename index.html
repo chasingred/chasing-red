@@ -6,7 +6,7 @@
     <title>Chasing Red</title>
     <style>
       :root {
-        --header-bg: #5C0D0D
+        --header-bg: #5C0D0D;
         --text-color: #222;
         --muted-color: #666;
       }
@@ -45,16 +45,17 @@
         margin-top: 0.5rem;
       }
 
-      .socials a {
+      .socials a { 
         display: inline-block;
         margin: 0 0.4rem;
         color: #f2f2f2;
         text-decoration: none;
-        transition: color 0.2s ease;
+        transition: color 0.2s ease, text-shadow 0.3s ease;
       }
 
       .socials a:hover {
-        color: #fff;
+        color: #ff4c4c;
+        text-shadow: 0 0 6px #ff4c4c, 0 0 10px #ff4c4c;
       }
 
       .socials svg {
