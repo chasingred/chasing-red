@@ -1,184 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chasing Red</title>
-    <!-- Google Fonts for Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chasing Red</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 2rem 1rem;
+      background: #fff;
+      color: #222;
+    }
 
-    <style>
-      :root {
-        --text-color: #222;
-        --muted-color: #666;
-        --header-font: "Inter", sans-serif;
-      }
+    main {
+      max-width: 700px;
+      margin: 0 auto;
+    }
 
-      body {
-        font-family: "Georgia", serif;
-        color: var(--text-color);
-        background: #fff;
-        margin: 0;
-        padding: 0;
-      }
+    article {
+      margin-bottom: 1.5rem;
+    }
 
-      /* Header */
-      header {
-        background: linear-gradient(90deg, #8B0000 0%, #1F1F2E 100%);
-        color: #fff;
-        padding: 2rem 1rem;
-        text-align: center;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-        font-family: var(--header-font);
-      }
+    article h2 {
+      font-size: 1.3rem;
+      margin: 0 0 0.3rem 0;
+    }
 
-      header h1 {
-        font-size: 2.2rem;
-        margin: 0;
-      }
+    article h2 a {
+      text-decoration: none;
+      color: #8B0000; /* dark red link color */
+    }
 
-      header p {
-        margin: 0.4rem 0 1rem;
-        color: #f2f2f2;
-        font-style: italic;
-        font-size: 0.95rem;
-      }
+    article h2 a:hover {
+      text-decoration: underline;
+    }
 
-      .socials {
-        margin-top: 0.5rem;
-      }
+    article p {
+      margin: 0;
+      color: #666;
+      font-size: 0.95rem;
+    }
 
-      .socials a {
-        display: inline-block;
-        margin: 0 0.4rem;
-        color: #f2f2f2;
-        text-decoration: none;
-        transition: color 0.2s ease, text-shadow 0.3s ease;
-      }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h2><a href="posts/first-post.html">First Recon Steps</a></h2>
+      <p>Reverse Engineer Basics.</p>
+    </article>
 
-      /* Neon-red glow on hover */
-      .socials a:hover {
-        color: #ff4c4c;
-        text-shadow: 0 0 6px #ff4c4c, 0 0 10px #ff4c4c;
-      }
+    <article>
+      <h2><a href="posts/sample-exploit.html">Sample Exploit Analysis</a></h2>
+      <p>Breaking down an example vulnerability for learning purposes.</p>
+    </article>
 
-      .socials svg {
-        width: 22px;
-        height: 22px;
-        vertical-align: middle;
-      }
+    <article>
+      <h2><a href="posts/network-scanning.html">Network Scanning Techniques</a></h2>
+      <p>ARM Hacking 101.</p>
+    </article>
+  </main>
 
-      /* Main content */
-      main {
-        max-width: 700px;
-        margin: 1.8rem auto;
-        padding: 0 1rem;
-      }
-
-      main article {
-        margin-bottom: 1.3rem;
-      }
-
-      article h2 {
-        font-size: 1.25rem;
-        margin: 0 0 0.2rem 0;
-      }
-
-      article p {
-        margin: 0;
-        color: var(--muted-color);
-        font-size: 0.95rem;
-      }
-
-      article a {
-        color: #000;
-        text-decoration: none;
-      }
-
-      article a:hover {
-        text-decoration: underline;
-      }
-
-      footer {
-        border-top: 1px solid #eee;
-        margin-top: 2rem;
-        padding: 1rem 0;
-        text-align: center;
-        font-size: 0.85rem;
-        color: var(--muted-color);
-      }
-
-      /* Mobile adjustments */
-      @media (max-width: 600px) {
-        header {
-          padding: 1.4rem 0.8rem;
-        }
-
-        header h1 {
-          font-size: 1.8rem;
-        }
-
-        header p {
-          font-size: 0.9rem;
-        }
-
-        .socials svg {
-          width: 20px;
-          height: 20px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Chasing Red</h1>
-      <p>Notes, thoughts, and experiments</p>
-
-      <div class="socials">
-        <!-- Email -->
-        <a href="mailto:youremail@example.com" aria-label="Email">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 13.065 0 6V4l12 7 12-7v2l-12 7.065zM0 8v12h24V8l-12 7L0 8z"
-            />
-          </svg>
-        </a>
-
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M4.98 3.5C4.98 5 3.9 6 2.5 6S0 5 0 3.5 1.1 1 2.5 1 4.98 2 4.98 3.5zM.5 8.5h4V24h-4V8.5zM8.5 8.5h3.7v2.1h.1c.5-1 1.8-2.1 3.8-2.1 4 0 4.8 2.6 4.8 6V24h-4v-6.9c0-1.6 0-3.6-2.2-3.6s-2.5 1.7-2.5 3.5V24h-4V8.5z"
-            />
-          </svg>
-        </a>
-
-        <!-- X (formerly Twitter) -->
-        <a href="https://x.com" target="_blank" aria-label="X">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M18.9 1H22L14.5 9.3 23 23h-6.8l-5.3-8.5L5.2 23H2l8.2-9.4L1 1h6.9l4.8 7.7L18.9 1zm-2.4 19.6h1.9L7.6 3.3H5.6l10.9 17.3z"
-            />
-          </svg>
-        </a>
-      </div>
-    </header>
-
-    <main>
-      <article>
-        <h2><a href="posts/first-post.html">Hello World</a></h2>
-        <p>Testing...</p>
-      </article>
-
-      <article>
-        <h2><a href="posts/second-post.html">Another Example</a></h2>
-        <p>Just another placeholder post for now.</p>
-      </article>
-    </main>
-
-    <footer>
-      <p>© 2025 Chasing Red</p>
-    </footer>
-  </body>
+  <footer>
+    <p>© 2025 Chasing Red</p>
+  </footer>
+</body>
 </html>
